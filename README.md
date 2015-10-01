@@ -39,4 +39,4 @@ Peter Baral
 License
 ======
 
-**TapticPeekAndPop** is released under the **MIT** license. See [LICENSE](https://github.com/Legoless/TapticPlayground/blob/master/LICENSE) file for more information.
+**TapticPeekAndPop** is released under the **MIT** license. See [LICENSE](https://github.com/peterbaral/TapticPeekAndPop/blob/master/LICENSE.txt) file for more information.
