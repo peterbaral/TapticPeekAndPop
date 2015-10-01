@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-dH-k6r">
+                                <rect key="frame" x="151" y="159" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="gA3-Q4-oLw"/>
+                                    <constraint firstAttribute="height" constant="30" id="jLh-6c-raG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Peek"/>
+                                <connections>
+                                    <action selector="doTapticPeek:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rCD-PB-2hk"/>
+                                    <action selector="doTapticPeek:" destination="BYZ-38-t0r" eventType="touchDown" id="w51-z3-Jb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dru-Ch-NJh">
+                                <rect key="frame" x="151" y="210" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Poke"/>
+                                <connections>
+                                    <action selector="doTapticPoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2KC-m8-sh5"/>
+                                    <action selector="doTapticPoke:" destination="BYZ-38-t0r" eventType="touchDown" id="PYZ-va-RCZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taptic Engine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS6-fL-fue">
+                                <rect key="frame" x="115" y="50" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ETf-dH-k6r" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="139" id="E7n-pG-5FO"/>
+                            <constraint firstItem="nS6-fL-fue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="LRv-UZ-cp9"/>
+                            <constraint firstItem="ETf-dH-k6r" firstAttribute="top" secondItem="nS6-fL-fue" secondAttribute="bottom" constant="88" id="SxE-JP-dZJ"/>
+                            <constraint firstItem="ETf-dH-k6r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZSx-gI-2E3"/>
+                            <constraint firstItem="Dru-Ch-NJh" firstAttribute="leading" secondItem="ETf-dH-k6r" secondAttribute="leading" id="eIa-6O-izk"/>
+                            <constraint firstItem="nS6-fL-fue" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="hXX-NC-6FD"/>
+                            <constraint firstItem="Dru-Ch-NJh" firstAttribute="top" secondItem="ETf-dH-k6r" secondAttribute="bottom" constant="21" id="iEG-c9-v4Q"/>
+                            <constraint firstItem="Dru-Ch-NJh" firstAttribute="trailing" secondItem="ETf-dH-k6r" secondAttribute="trailing" id="xJR-Zr-Vrt"/>
+                            <constraint firstItem="nS6-fL-fue" firstAttribute="centerX" secondItem="ETf-dH-k6r" secondAttribute="centerX" id="yZt-Rr-y3F"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.5" y="414.5"/>
+        </scene>
+    </scenes>
+</document>
