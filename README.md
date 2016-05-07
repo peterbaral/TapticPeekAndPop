@@ -1,6 +1,6 @@
 # TapticPeekAndPop
 
-A very basic example of how to call the "Peek" and "Pop" haptic feedback. 
+A very basic example of how to call the "Peek" and "Poke" haptic feedback. 
 It's private actuation methods are hidden in `UIDevice` and `_UITapticEngine` classes and are called by `UIPreviewInteractionController` when appropriate.
 
 ## Disclaimer
