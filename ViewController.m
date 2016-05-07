@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AudioToolbox/AudioToolbox.h"
 
 static int const UITapticEngineFeedbackPeek = 1001;
 static int const UITapticEngineFeedbackPop = 1002;
@@ -44,6 +45,21 @@ static int const UITapticEngineFeedbackPop = 1002;
 
 - (IBAction) doTapticPoke:(id)sender {
     [self tapticFeedback:UITapticEngineFeedbackPop];
+}
+
+#pragma mark Peek and Pop using AudoServices
+// http://stackoverflow.com/questions/32526868/taptic-in-ios-9
+
+- (IBAction) doTapticPeekWithAudioServices:(id)sender {
+    AudioServicesPlaySystemSound(1519); // Actuate `Peek` feedback (weak boom)
+}
+
+- (IBAction) doTapticPokeWithAudioServices:(id)sender {
+    AudioServicesPlaySystemSound(1520); // Actuate `Pop` feedback (strong boom)
+}
+
+- (IBAction) doTapticNopeWithAudioServices:(id)sender {
+    AudioServicesPlaySystemSound(1521); // Actuate `Nope` feedback (series of three weak booms)
 }
 
 - (void)viewDidLoad {
