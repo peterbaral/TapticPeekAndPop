@@ -47,7 +47,7 @@ static int const UITapticEngineFeedbackPop = 1002;
     [self tapticFeedback:UITapticEngineFeedbackPop];
 }
 
-#pragma mark Peek and Pop using AudoServices
+#pragma mark Peek and Poke using AudoServices
 // http://stackoverflow.com/questions/32526868/taptic-in-ios-9
 
 - (IBAction) doTapticPeekWithAudioServices:(id)sender {
